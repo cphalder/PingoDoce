@@ -15,9 +15,9 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/styles.css" />
     <title>Produto</title>
@@ -160,14 +160,22 @@
           <h3 class="lower_price">12.99/KG</h3>
         </div>
         <p class="price_kg">Peça - Unidade 2.2 Kg</p>
-        <button type="button" class="btn btn-primary">Personalizar</button>
-        <button type="button" class="btn btn-secondary">Adicionar já</button>
+        <div class="toggle_qtd">
+            <button type="button" class="btn btn-info btn_un">un</button>
+            <button type="button" class="btn btn-info btn_kg">kg</button>
+            <button type="button" class="btn btn-info btn_addsub btn_minus">-</button>
+            <p>1</p>
+            <button type="button" class="btn btn-info btn_addsub btn_plus">+</button>
+
+        </div>
+        <button type="button" class="btn btn-primary">Adicionar já</button>
+        <button type="button" class="btn btn-secondary">Personalizar</button>
       </div>
     </div>
     <div class="extra_info">
       <div class="product_info">
         <h2>Sobre o produto</h2>
-        <p>
+        <p class="product_info_text">
           Na recolha, temos em conta o peso do produto. Se desejar que o shopper
           tenha atenção às unidades, por favor, deixe essa indicação nas notas
           do produto. A imagem é meramente ilustrativa, por favor, adicione nas
@@ -175,103 +183,34 @@
         </p>
       </div>
       <div class="add_info">
-        <h2>Informação adicional</h2>
-        <p>Origem</p>
-        <hr />
-        <p>Frigorifico</p>
-        <hr />
-        <p>Congelador</p>
+        <h2 class="add_info_title">Informação adicional</h2>
+        <div class="origem reset_margin_add_info">
+          <p class="reset_margin_add_info origin_title">Origem</p>
+          <img class="emoji_origin" src="/content/portugal_emoji.png" alt="" />
+        </div>
+        <hr class="add_info_hr" />
+        <div class="conservation reset_margin_add_info">
+        <p class="conserv_title reset_margin_add_info">Conservação</p>
+        <p class="reset_margin_add_info conserv_info">Refrigerado entre -2º e 4º</p>
+    </div>
+    <hr class="add_info_hr" />
+    <div class="nutri_info reset_margin_add_info">
+        <p class="nutri_title reset_margin_add_info">Informação nutricional</p>
+        <p class="nutri_link reset_margin_add_info">Ver toda a informação</p>
+    </div>
       </div>
     </div>
     <div class="receitas">
       <h2>Receitas sugeridas</h2>
-      <div class="container">
-        <div class="row">
-          <div
-            id="carousel"
-            class="carousel slide"
-            data-ride="carousel"
-            data-interval="false"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="slide-box">
-                  <img
-                    src="https://picsum.photos/285/200/?image=0&random"
-                    alt="First slide"
-                  />
-                  <img
-                    src="https://picsum.photos/285/200/?image=1&random"
-                    alt="First slide"
-                  />
-                  <img
-                    src="https://picsum.photos/285/200/?image=2&random"
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div>
-                  <div class="slide-box">
-                    <img
-                      src="https://picsum.photos/285/200/?image=4&random"
-                      alt="Second slide"
-                    />
-                    <img
-                      src="https://picsum.photos/285/200/?image=5&random"
-                      alt="Second slide"
-                    />
-                    <img
-                      src="https://picsum.photos/285/200/?image=6&random"
-                      alt="Second slide"
-                    />
-                    <img
-                      src="https://picsum.photos/285/200/?image=7&random"
-                      alt="Second slide"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#carousel"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carousel"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+      <div class="card" style="width: 340px;      ">
+        <img class="card-img-top" src="/content/picanha_espeto.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Picanha do espeto com fruta grelhada</p>
         </div>
       </div>
-    </div>
     <div class="complementos">
       <h2>Acompanhe a sua escolha</h2>
-      <div class="suggestion_cards">
-        <div class="card">
-          <div class="card_container">
-            <img class="img_card" src="/content/potatoes.jpeg" alt="" />
-            <div class="container">
-              <p>Batatas brancas</p>
-              <p>Nacionais</p>
-              <p>10,99€/un</p>
-              <p class="add_suggestion">Adicionar</p>
+
             </div>
           </div>
         </div>
