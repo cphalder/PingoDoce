@@ -74,6 +74,7 @@ a:link {
   margin-bottom: 2px;
   font-weight: 700;
   font-size: 32px;
+  color: #162513;
 }
 
 .btn-primary {
@@ -86,6 +87,7 @@ a:link {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+  margin-right: 20px;
 }
 
 .btn-secondary {
@@ -153,10 +155,12 @@ a:link {
 
 .btn_minus {
   margin-right: 15px;
+  color: white;
 }
 
 .btn_plus {
   margin-left: 15px;
+  color: white;
 }
 
 .rating {
@@ -165,7 +169,7 @@ a:link {
 }
 
 .review_stars {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .stars_review_breakdown {
@@ -173,6 +177,7 @@ a:link {
   font-weight: 700;
   font-size: 10px;
   line-height: 14px;
+  margin-bottom: 20px;
 }
 
 .price_hero {
@@ -182,6 +187,13 @@ a:link {
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
+}
+
+.current_price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 16px;
 }
 
 .price_kg {
@@ -214,11 +226,14 @@ a:link {
   margin-bottom: 40px;
 }
 
+.product_info {
+  max-width: 402px;
+}
+
 .extra_info {
   margin-top: 40px;
   margin-left: 220px;
   margin-right: 220px;
-
   display: flex;
 }
 
@@ -301,14 +316,166 @@ a:link {
   margin-top: 50px;
 }
 
+.recipe_suggestions {
+  display: flex;
+}
+
+.receitas_title {
+  margin-bottom: 20px;
+}
+
+.recipecenter {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .card-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
 
+.card_addtext {
+  display: flex;
+  justify-content: end;
+}
+
+.card_addtext_difficulty {
+  display: flex;
+  align-items: baseline;
+}
+
+.card_addtext_time {
+  display: flex;
+  align-items: baseline;
+}
+
+.card_addtext_rating {
+  display: flex;
+  align-items: baseline;
+}
+
+.card_addtext_text {
+  margin-left: 8px;
+  margin-right: 24px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
 .complementos {
   margin-top: 60px;
+  margin-right: 220px;
+}
+
+.card_addtext_price {
+  margin-right: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+}
+
+.card-img-top-comp {
+  width: 160px;
+  height: 138px;
+}
+
+.btn_kart_card {
+  width: 159px;
+  height: 33.79px;
+  background: #8ec043;
+  box-shadow: 0px 3.75px 3.75px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 0px 9.375px 9.375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+
+.img_kart_card {
+  width: 30px;
+  height: 30px;
+}
+
+.comp_title {
+  display: flex;
+  margin-left: 220px;
+  margin-bottom: 35px;
+}
+
+.comp_cards {
+  display: flex;
+  margin-left: 220px;
+}
+
+.comp_card_detail {
+  margin-right: 20px;
+}
+
+.newsletter {
+  margin-top: 70px;
+  background-color: #93c01d;
+  padding-top: 50px;
+}
+
+.nl_content {
   margin-left: 220px;
   margin-right: 220px;
+  display: flex;
+  align-items: center;
+}
+
+.nl_smiley {
+  margin-right: 20px;
+}
+
+.nl_top_text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #f1f4f3;
+}
+
+.nl_bottom_text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #00473e;
+  margin-bottom: 24px;
+}
+
+.nl_sign_up {
+  display: flex;
+  background: #f1f4f3;
+  border: 1px solid #667080;
+  border-radius: 10px;
+}
+
+.nl_input_email {
+  width: 360px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #667080;
+}
+
+.nl_btn_sub {
+  width: 160px;
+  background: #00473e;
+  border-radius: 0px 10px 10px 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.nl_cta {
+  display: block;
+  margin-top: 16px;
+  margin-left: 310px;
+  margin-right: 220px;
+  margin-bottom: 70px;
+  width: 430px;
 }
